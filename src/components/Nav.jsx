@@ -20,7 +20,11 @@ export default function Nav({ isLight, onToggle }) {
 
   return (
     <nav>
-      <div className="nav-logo">&lt; nta /&gt;</div>
+      <div className="nav-logo">
+        <span className="nav-logo-bracket">&lt;</span>
+        <span className="nav-logo-name">Nafiu<span className="nav-logo-dot">.</span>Amosa</span>
+        <span className="nav-logo-bracket">/&gt;</span>
+      </div>
       <ul className="nav-links">
         {sections.map(id => (
           <li key={id}>
